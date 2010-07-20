@@ -6,6 +6,7 @@ gem 'rails', '3.0.0.beta4'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'heroku'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -13,8 +14,6 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # Deploy with Capistrano
 # gem 'capistrano'
 
-# To use debugger
-# gem 'ruby-debug'
 
 # Bundle the extra gems:
 # gem 'bj'
@@ -24,6 +23,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 # Bundle gems for certain environments:
 # gem 'rspec', :group => :test
-# group :test do
-#   gem 'webrat'
-# end
+group :test do
+  gem 'ruby-debug'
+# gem 'webrat'
+ end
